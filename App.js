@@ -5,6 +5,7 @@ import { StyleSheet, SafeAreaView, Platform, View } from 'react-native';
 
 //------------Import components-------------------
 import Header from './src/components/_Shared/Header';
+import TasksContainer from './src/components/TasksEpic/TasksContainer';
 //------------------------------------------------
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
     // SafeAreaView permet d'éviter que nos éléments aillents trop haut sur le mobile, fonctionne que pour IOS
     <SafeAreaView style={styles.container}>
       <Header />
+      <TasksContainer />
     </SafeAreaView>
   );
 }
